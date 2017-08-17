@@ -1,0 +1,12 @@
+body {
+  background-color: #202028;
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+canvas {
+  border: .2em solid white;
+}
