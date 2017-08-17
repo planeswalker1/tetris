@@ -65,48 +65,48 @@ function createPiece (type) {
       // T
       [0, 0, 0],
       [1, 1, 1],
-      [0, 1, 0],
+      [0, 1, 0]
     ];
   } else if (type === "O") {
     return [
       // O
       [2, 2],
-      [2, 2],
+      [2, 2]
     ];
-  } else if (type = "L") {
+  } else if (type === "L") {
     return [
       // L
       [0, 3, 0],
       [0, 3, 0],
-      [0, 3, 3],
+      [0, 3, 3]
     ];
-  } else if (type = "J") {
+  } else if (type === "J") {
     return [
       // J
       [0, 4, 0],
       [0, 4, 0],
-      [4, 4, 0],
+      [4, 4, 0]
     ];
-  } else if (type = "I") {
+  } else if (type === "I") {
     return [
       // I
       [0, 5, 0, 0],
       [0, 5, 0, 0],
-      [0, 5, 0, 0],
+      [0, 5, 0, 0]
     ];
-  } else if (type = "S") {
+  } else if (type === "S") {
     return [
       // S
       [0, 6, 6],
       [6, 6, 0],
-      [0, 0, 0],
+      [0, 0, 0]
     ];
-  } else if (type = "Z") {
+  } else if (type === "Z") {
     return [
       // Z
       [7, 7, 0],
       [0, 7, 7],
-      [0, 0, 0],
+      [0, 0, 0]
     ];
   }
 }
@@ -209,7 +209,7 @@ function playerRotate (dir) {
 }
 
 // transpose (convert all rows into columns) + reverse (each row) = rotation
-function rotate(matrix, dir) {
+function rotate (matrix, dir) {
   for (let y = 0; y < matrix.length; ++y) {
     for (let x = 0; x < y; ++x) {
       // an aside <!--
@@ -271,13 +271,13 @@ function updateScore () {
 // map colors for pieces
 const colors = [
   null,
-  '#FF0D72',
-  '#0DC2FF',
-  '#0DFF72',
-  '#F538FF',
-  '#FF8E0D',
-  '#FFE138',
-  '#3877FF',
+  "#FF0D72",
+  "#0DC2FF",
+  "#0DFF72",
+  "#F538FF",
+  "#FF8E0D",
+  "#FFE138",
+  "#3877FF"
 ];
 
 const arena = createMatrix(12, 20);
@@ -291,7 +291,7 @@ const player = {
 }
 
 // keyboard controls
-document.addEventListener('keydown', event => {
+document.addEventListener("keydown", event => {
   // check keyCode
   // console.log(event);
   // move left
